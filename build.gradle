@@ -71,8 +71,26 @@ test {
     useJUnitPlatform()
 }
 
-task api_test(type: Test) {
+task regress_test(type: Test) {
     useJUnitPlatform {
-        includeTags( "API")
+        includeTags("API")
+    }
+
+task pet_test(type: Test) {
+        useJUnitPlatform {
+            includeTags("Pet")
+        }
+    }
+
+task users_test(type: Test) {
+        useJUnitPlatform {
+            includeTags("Users")
+        }
+    }
+
+task store_test(type: Test) {
+        useJUnitPlatform {
+            includeTags("Store")
+        }
     }
 }
