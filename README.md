@@ -10,9 +10,12 @@
 ## :pushpin: Содержание:
 
 - [Использованный стек технологий](#computer-использованный-стек-технологий)
-- [Сборка в Jenkins](#сборка-в-jenkins)
-- [Пример Allure-отчета](#пример-allure-отчета)
-- [Уведомления в Telegram с использованием бота](#уведомления-в-telegram-с-использованием-бота)
+- [Команда на запуск тестов сборки Jenkins](#task-команда-на запуск-тестов-сборки-jenkins)
+- [Сборка в Jenkins](#jenkins-сборка-в-jenkins)
+- [Пример Allure-отчета](#allure-пример-allure-отчета)
+- [Интеграция с Allure TestOps](#testops-интеграция-с-allure-testops)
+- [Интеграция с Jira](#jira-интеграция-с-jira)
+- [Уведомления в Telegram с использованием бота](#tlg-уведомления-в-telegram-с-использованием-бота)
 
 ## :computer: Использованный стек технологий
 
@@ -35,7 +38,7 @@
 - Для удаленного запуска реализована параметризированная джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота.
 - Осуществлена интеграция с <code>Allure TestOps</code> и <code>Jira</code>
 
-### Команда на запуск тестов сборки Jenkins
+### :task: Команда на запуск тестов сборки Jenkins
 
 ```
 clean
@@ -48,19 +51,19 @@ ${TASK}
 
 
 
-## <a href="https://jenkins.autotests.cloud/job/petstore-api-test-graduate-work/"><img src="media/readme/Jenkins.svg" title="Jenkins" width="4%"/> Сборка в Jenkins</a>
+## :jenkins: <a href="https://jenkins.autotests.cloud/job/petstore-api-test-graduate-work/"><img src="media/readme/Jenkins.svg" title="Jenkins" width="4%"/> Сборка в Jenkins</a>
 <p align="center">
 <img title="Jenkins Build" src="media/readme/JenkinsBuild.png">
 </p>
 
-## <a href="https://jenkins.autotests.cloud/job/petstore-api-test-graduate-work/5/allure/"><img src="media/readme/Allure_Report.svg" title="Allure Report" width="4%"/> Пример Allure-отчета</a>
+## :allure: <a href="https://jenkins.autotests.cloud/job/petstore-api-test-graduate-work/5/allure/"><img src="media/readme/Allure_Report.svg" title="Allure Report" width="4%"/> Пример Allure-отчета</a>
 
 
 <p align="center">
 <img title="Allure Overview" src="media/readme/allureReport.png">
 </p>
 
-## <a href="https://allure.autotests.cloud/project/3477/dashboards"><img src="media/readme/AllureTestOps.svg" title="Allure TestOps" width="4%"/> Интеграция с Allure TestOps</a>
+## :testops: <a href="https://allure.autotests.cloud/project/3477/dashboards"><img src="media/readme/AllureTestOps.svg" title="Allure TestOps" width="4%"/> Интеграция с Allure TestOps</a>
 
 Выполнена интеграция сборки <code>Jenkins</code> с <code>Allure TestOps</code>.
 Результат выполнения автотестов отображается в <code>Allure TestOps</code>
@@ -70,7 +73,7 @@ ${TASK}
 <img title="Allure TestOps DashBoard" src="media/readme/Allure.png">
 </p>
 
-## <a href="https://jira.autotests.cloud/browse/HOMEWORK-777"><img src="media/readme/Jira.svg" title="Jira" width="4%"/> Интеграция с Jira</a>
+## :jira: <a href="https://jira.autotests.cloud/browse/HOMEWORK-777"><img src="media/readme/Jira.svg" title="Jira" width="4%"/> Интеграция с Jira</a>
 
 Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается информация, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
 
@@ -78,7 +81,7 @@ ${TASK}
 <img title="Jira Task" src="media/readme/jiraTask.png">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/readme/Telegram.svg"> Уведомления в Telegram с использованием бота
+## :tlg: <img width="4%" style="vertical-align:middle" title="Telegram" src="media/readme/Telegram.svg"> Уведомления в Telegram с использованием бота
 
 После завершения сборки, бот созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с результатом.
 
