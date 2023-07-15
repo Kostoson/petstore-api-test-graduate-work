@@ -10,11 +10,9 @@
 ## :pushpin: Содержание:
 
 - [Использованный стек технологий](#computer-использованный-стек-технологий)
-- [Запуск тестов из терминала](#arrow_forward-запуск-тестов-из-терминала)
 - [Сборка в Jenkins](#сборка-в-jenkins)
 - [Пример Allure-отчета](#пример-allure-отчета)
 - [Уведомления в Telegram с использованием бота](#уведомления-в-telegram-с-использованием-бота)
-- [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
 
 ## :computer: Использованный стек технологий
 
@@ -42,33 +40,27 @@
 ```
 clean
 ${TASK}
--Dremote=${REMOTE_DRIVER_URL}
--Dbrowser=${BROWSER}
--DbrowserSize=${BROWSER_SIZE}
 ```
 
 ### <img src="media/readme/param.svg" title="Параметры сборки" width="4%"/> Параметры сборки
 
-* <code>TASK</code> – задача на прогон тестов. Варианты: WEB, API, Regress.
-* <code>REMOTE_DRIVER_URL</code> – адрес удаленного сервера, на котором будут запускаться тесты.
-* <code>BROWSER</code> – браузер, в котором будут выполняться тесты. По-умолчанию - <code>chrome</code>.
-* <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты.
+* <code>TASK</code> – задача на прогон тестов. Варианты: <code>regress_test</code>, <code>users_test</code>, <code>store_test</code>, <code>pet_test</code>.
 
 
 
-## <img src="media/readme/Jenkins.svg" title="Jenkins" width="4%"/> Сборка в Jenkins
+## <a href="https://jenkins.autotests.cloud/job/petstore-api-test-graduate-work/"><img src="media/readme/Jenkins.svg" title="Jenkins" width="4%"/> Сборка в Jenkins</a>
 <p align="center">
 <img title="Jenkins Build" src="media/readme/JenkinsBuild.png">
 </p>
 
-## <img src="media/readme/Allure_Report.svg" title="Allure Report" width="4%"/> Пример Allure-отчета
+## <a href="https://jenkins.autotests.cloud/job/petstore-api-test-graduate-work/5/allure/"><img src="media/readme/Allure_Report.svg" title="Allure Report" width="4%"/> Пример Allure-отчета</a>
 
 
 <p align="center">
 <img title="Allure Overview" src="media/readme/allureReport.png">
 </p>
 
-## <img src="media/readme/AllureTestOps.svg" title="Allure TestOps" width="4%"/> Интеграция с Allure TestOps
+## <a href="https://allure.autotests.cloud/project/3477/dashboards"><img src="media/readme/AllureTestOps.svg" title="Allure TestOps" width="4%"/> Интеграция с Allure TestOps</a>
 
 Выполнена интеграция сборки <code>Jenkins</code> с <code>Allure TestOps</code>.
 Результат выполнения автотестов отображается в <code>Allure TestOps</code>
@@ -78,7 +70,7 @@ ${TASK}
 <img title="Allure TestOps DashBoard" src="media/readme/Allure.png">
 </p>
 
-## <img src="media/readme/Jira.svg" title="Jira" width="4%"/> Интеграция с Jira
+## <a href="https://jira.autotests.cloud/browse/HOMEWORK-777"><img src="media/readme/Jira.svg" title="Jira" width="4%"/> Интеграция с Jira</a>
 
 Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается информация, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
 
