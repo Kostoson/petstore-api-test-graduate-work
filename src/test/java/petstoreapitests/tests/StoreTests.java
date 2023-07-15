@@ -23,7 +23,6 @@ public class StoreTests {
     GenerateTestData generateTestData = new GenerateTestData();
 
     @Test
-    @Disabled
     @Severity(BLOCKER)
     @DisplayName("Позитивный сценарий на добавление питомца к заказу")
     void orderPurchasingThePetTest() {
@@ -77,7 +76,7 @@ public class StoreTests {
         step("Проверка тела ответа", () ->
 
             Assertions.assertAll(() -> {
-                assertThat(response.getCode()).isEqualTo(100);
+                assertThat(response.getCode()).isEqualTo(200);
                 assertThat(response.getType()).isEqualTo(type);
                 assertThat(response.getMessage()).isEqualTo(String.valueOf(orderId));
             })
