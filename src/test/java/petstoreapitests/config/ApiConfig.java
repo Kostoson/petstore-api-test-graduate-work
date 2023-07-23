@@ -6,6 +6,7 @@ import org.aeonbits.owner.Config;
         "classpath:properties/api.properties"
 })
 public interface ApiConfig extends Config{
+
     @Key("baseApiUrl")
     @DefaultValue("https://petstore.swagger.io")
     String getBaseApiUrl();

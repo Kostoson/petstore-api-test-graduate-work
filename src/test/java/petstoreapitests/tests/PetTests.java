@@ -18,6 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Tags({@Tag("API"), @Tag("Pet")})
 @DisplayName("Тестирование методов базы сервиса Petstore")
 public class PetTests {
+
     GenerateTestData generateTestData = new GenerateTestData();
 
     @Test
