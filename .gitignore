@@ -3,7 +3,7 @@
 */target
 /target
 /build
-/.gradle
+.gradle
 *.class
 
 # Log file
