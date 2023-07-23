@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class GenerateTestData {
+
     Faker faker = new Faker();
     String[] status = {"accepted", "closed", "urgent"};
     String[] tags = {"cat", "dog", "fish", "bird"};

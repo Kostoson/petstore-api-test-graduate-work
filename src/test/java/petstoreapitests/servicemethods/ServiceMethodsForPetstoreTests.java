@@ -6,6 +6,7 @@ import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class ServiceMethodsForPetstoreTests {
+
     public OrderPurchasingThePetResponseBody createOrderForAPet(OrderPurchasingThePetRequestBody requestBody) {
         OrderPurchasingThePetResponseBody response=
                  given(requestSpec)

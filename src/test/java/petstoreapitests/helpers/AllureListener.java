@@ -3,6 +3,7 @@ package petstoreapitests.helpers;
 import io.qameta.allure.restassured.AllureRestAssured;
 
 public class AllureListener {
+
     private static final AllureRestAssured FILTER = new AllureRestAssured();
 
     public static AllureRestAssured withCustomTemplates() {
